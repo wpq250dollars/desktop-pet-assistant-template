@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>给桌宠发一张小纸条</title>
+  </head>
+  <body>
+    <main class="sender-shell">
+      <section class="sender-panel" aria-labelledby="page-title">
+        <div class="pet-note-avatar" aria-hidden="true">
+          <span class="pet-ear pet-ear-left"></span>
+          <span class="pet-ear pet-ear-right"></span>
+          <span class="pet-face">
+            <span class="pet-eye pet-eye-left"></span>
+            <span class="pet-eye pet-eye-right"></span>
+            <span class="pet-blush pet-blush-left"></span>
+            <span class="pet-blush pet-blush-right"></span>
+          </span>
+        </div>
+
+        <header class="sender-header">
+          <p>桌宠小纸条</p>
+          <h1 id="page-title">给桌宠发一张小纸条</h1>
+          <span>写下想说的话，它会出现在桌宠旁。</span>
+        </header>
+
+        <form id="message-form" class="message-form">
+          <label class="field">
+            <span>配对码</span>
+            <input
+              id="pair-code"
+              name="pairCode"
+              type="password"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+              minlength="4"
+              placeholder="例如 7K2m"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>小纸条</span>
+            <textarea
+              id="message-content"
+              name="content"
+              maxlength="200"
+              rows="6"
+              placeholder="写下想说的话，最多 200 字"
+              required
+            ></textarea>
+          </label>
+
+          <div class="form-footer">
+            <span id="message-count">0 / 200</span>
+            <span id="daily-count">今日已发送 0 条</span>
+          </div>
+
+          <button id="send-button" class="send-button" type="submit">发送给桌宠</button>
+
+          <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

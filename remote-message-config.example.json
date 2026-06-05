@@ -1,0 +1,5 @@
+{
+  "supabaseUrl": "https://your-project-ref.supabase.co",
+  "supabaseAnonKey": "your-anon-or-publishable-key",
+  "realtimeTopic": "your-receiver-topic"
+}
